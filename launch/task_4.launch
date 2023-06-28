@@ -1,0 +1,13 @@
+<launch>
+
+    
+
+    <arg name ="user_sw_num"/>
+
+    <node>
+        <pkg="package1" type="csvintegrate.py" name="csvintegrate" output = "screen">
+        <param name= "sw_num" value="$(arg user_sw_num)"/>
+    
+    </node>
+
+</launch>

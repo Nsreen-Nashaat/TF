@@ -1,0 +1,6 @@
+<launch>
+    <arg name = "sw_num"/>
+    <node name="aruco_pos" pkg="code" type="object2.py" output = "screen">
+        <param name = "sw" value = "$(arg sw_num)"/>
+    </node>
+</launch>
